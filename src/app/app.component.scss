@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 50px;
+  margin: 0 auto;
+  .nav-container {
+    width: 20%;
+    margin-right: 10px;
+  }
+  .main-container {
+    width: 80%;
+    padding: 0 10px;
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        .nav-container{
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .main-container {
+            width: 100%;
+        }
+    }
+  }
